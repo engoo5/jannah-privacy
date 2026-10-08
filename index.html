@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>رحلة الجنة | Rehlat Al-Jannah - تطبيق القرآن الكريم والأذكار</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #10B981;
+      --primary-dark: #059669;
+      --bg: #0F172A;
+      --card-bg: #1E293B;
+      --text: #F8FAFC;
+      --text-muted: #94A3B8;
+      --border: #334155;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #F8FAFC;
+        --card-bg: #FFFFFF;
+        --text: #0F172A;
+        --text-muted: #64748B;
+        --border: #E2E8F0;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Cairo', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.8;
+      padding: 40px 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 760px;
+      width: 100%;
+      background: var(--card-bg);
+      border-radius: 24px;
+      padding: 44px 32px;
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+      border: 1px solid var(--border);
+      text-align: center;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(16, 185, 129, 0.15);
+      color: var(--primary);
+      padding: 6px 18px;
+      border-radius: 999px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    h1 { font-size: 2.4rem; color: var(--primary); margin-bottom: 12px; font-weight: 800; }
+    p.subtitle { font-size: 1.15rem; color: var(--text-muted); margin-bottom: 30px; }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin: 32px 0;
+      text-align: right;
+    }
+    .feature-item {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border);
+      padding: 18px;
+      border-radius: 14px;
+    }
+    .feature-item h3 { font-size: 1.05rem; color: var(--primary); margin-bottom: 6px; }
+    .feature-item p { font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; }
+    .btn-group {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 36px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 28px;
+      border-radius: 14px;
+      font-weight: 700;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    .btn-primary {
+      background: var(--primary);
+      color: #FFFFFF;
+    }
+    .btn-primary:hover { background: var(--primary-dark); }
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+    .btn-secondary:hover { background: rgba(255, 255, 255, 0.12); }
+    footer {
+      margin-top: 40px;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="badge">تطبيق إسلامي شامل</div>
+    <h1>رحلة الجنة</h1>
+    <p class="subtitle">رفيقك اليومي للقرآن الكريم، أذكار الصباح والمساء، مواقيت الصلاة، والقبلة</p>
+
+    <div class="features">
+      <div class="feature-item">
+        <h3>📖 القرآن الكريم</h3>
+        <p>مصحف المدينة المنورة بخط عثماني وتلاوات عطرة وتفاسير ميسرة.</p>
+      </div>
+      <div class="feature-item">
+        <h3>🤲 الأذكار والأدعية</h3>
+        <p>حصن المسلم كاملاً مع مسبحة ذكية وتفاعل لمسي لطيف.</p>
+      </div>
+      <div class="feature-item">
+        <h3>🕌 مواقيت والقبلة</h3>
+        <p>مواقيت صلاة دقيقة مع تنبيهات وبوصلة دقيقة للقبلة.</p>
+      </div>
+      <div class="feature-item">
+        <h3>📅 خطط الختمة</h3>
+        <p>متابعة الورد القرآني اليومي وإحصائيات القراءة والختمات.</p>
+      </div>
+    </div>
+
+    <div class="btn-group">
+      <a href="https://github.com/engoo5/jannah/issues" class="btn btn-primary" target="_blank" rel="noopener">
+        الدعم الفني والمساعدة (Support)
+      </a>
+      <a href="privacy-policy.html" class="btn btn-secondary">
+        سياسة الخصوصية (Privacy Policy)
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 رحلة الجنة (Rehlat Al-Jannah). جميع الحقوق محفوظة.</p>
+    <p><a href="https://github.com/engoo5/jannah" style="color: var(--primary); text-decoration: none;">GitHub Repository</a></p>
+  </footer>
+</body>
+</html>
